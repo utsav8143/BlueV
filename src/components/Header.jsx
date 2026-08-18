@@ -28,7 +28,7 @@ const Header = () => {
       <div className="flex  lg:justify-evenly justify-between ">
          
         <div className=" mt-3 sm:ms-10 flex ">
-         <div className="size-15 mt-3">
+         <div className="size-15 mt-3 lg:ms-0 ms-7">
           <img src={lgooV} alt="BlueV" />
           </div>
           <div className="">
