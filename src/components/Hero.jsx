@@ -21,7 +21,7 @@ const Hero = () => {
   <h1 className="text-blue-950 font-extrabold lg:text-7xl text-5xl">EVERY DROP.</h1>
   <p className="lg:mt-10 mt-10 font-bold text-blue-900 lg:text-xl">BlueV brings you 100% pure, healthy and refreshing drinking water, purified through advanced technology and packed with care.</p>
 </div>
-<div className="relative lg:top-55 lg:ms-34 top-45 ms-10 me-10 flex lg:gap-3  z-20">
+<div className="relative lg:top-55 lg:ms-34 top-45 ms-10 me-15 flex lg:gap-3  z-20">
   <div className="flex items-center ">
     <div className="bg-blue-200 p-2 rounded-full">
     <Droplet className='text-blue-950 lg:w-5  lg:h-5 sm:w-4 sm:h-4'/>
