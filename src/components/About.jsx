@@ -11,7 +11,7 @@ const About = () => {
             <h2 className="text-5xl font-bold text-blue-800 mt-7">Pure water, thoughtfully delivered.</h2>
             <p className="mt-7 font-bold text-blue-900">From purification to packaging, every BlueV bottle is designed around one promise: clean, refreshing water you can trust every day.</p>
         </div>
-        <div className="flex gap-4 mt-6">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-6">
             <div className="bg-blue-200 rounded-2xl p-5">
                 <ShieldCheck className='text-blue-500 size-12'/>
                 <h1 className="text-blue-900 text-xl font-bold mt-6">Quality at every stage</h1>

@@ -6,7 +6,7 @@ const Quality = () => {
     <section id='quality' className='scroll-mt-30'>
     <div className='mt-20 lg:ms-34 lg:me-34 ms-10 me-10 '>
         <h1 className="text-blue-950 font-bold underline">QUALITY & SAFETY</h1>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2  mt-10 bg-blue-900 border border-white rounded-xl">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1  mt-10 bg-blue-900 border border-white rounded-xl">
             <div className=" p-10 flex items-center border border-white rounded-tl-xl">
                 <ShieldCheck className='text-white size-9'/>
                 <div className="ms-2">

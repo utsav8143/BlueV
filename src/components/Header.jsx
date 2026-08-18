@@ -2,6 +2,8 @@ import React from "react";
 import { Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import { X, Menu } from "lucide-react";
+import lgooV from "../assets/lgooV.png"
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +22,19 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
       isScrolled
       ? "bg-blue-300 opacity-95 backdrop-blur-sm shadow-lg shadow-blue-900 pb-3"
-      : "lg:bg-transparent bg-blue-300 pb-3"
+      : "lg:bg-transparent bg-blue-300 pb-1"
     }`}>
     <div >
       <div className="flex  lg:justify-evenly justify-between ">
-        <div className=" mt-3 sm:ms-10 ">
-          
+         
+        <div className=" mt-3 sm:ms-10 flex ">
+         <div className="size-15 mt-3">
+          <img src={lgooV} alt="BlueV" />
+          </div>
+          <div className="">
           <h1 className="font-extrabold text-4xl mt-2 text-blue-950">Blue<span className="font-extrabold text-4xl text-blue-500">V'</span></h1>
           <p className="text-[12px] text-blue-950 font-bold">VITALITY IN EVERY DROP</p>
+        </div>
         </div>
         <div className="lg:flex hidden gap-8 mt-9">
           <a
@@ -135,14 +142,14 @@ const Header = () => {
           </div>
           <div className="lg:flex hidden ms-20 gap-2 bg-blue-950 rounded-3xl p-3 mt-7 items-center hover:shadow-[0_0_30px] hover:shadow-blue-900 transition-all duration-300 hover:scale-95">
             <Phone className="h-5 w-5 text-white"/>
-            <a href="tel:+91" className="font-bold text-white">Order Now</a>
+            <a href="tel:+919931905495" className="font-bold text-white">Order Now</a>
           </div>
         
        
 
         {/* Hamburger Icon */}
         <button
-          className="lg:hidden me-20 mt-5 text-gray-500 "
+          className="lg:hidden me-20 mt-2 text-gray-500 "
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -193,7 +200,7 @@ const Header = () => {
             <div className="flex items-center m-2 bg-blue-950 justify-center rounded-full">
                 <Phone className=" w-5 h-5 text-white"/>
             <a
-              href="tel:+91"
+              href="tel:+919931905495"
               className="text-white font-bold  p-5  transition-transform "
               onClick={()=>setIsOpen(false)}
             >
