@@ -19,7 +19,7 @@ const Products = () => {
         <div className="lg:w-57 w-43.5 lg:rounded-lg rounded-tl-xl overflow-hidden"><img src={sample_1} alt="Sample 1" className="w-fit h-fit object-cover" /></div>
         <div className="lg:w-57 w-43.5 lg:mt-4 lg:rounded-lg rounded-bl-xl overflow-hidden"><img src={sample_2} alt="Sample 2" className="w-fit h-fit object-cover" /></div>
         </div>
-        <div className="lg:w-64 lg:h-95 h-69.5 lg:rounded-lg rounded-tr-xl rounded-br-xl overflow-hidden"><img src={sample_3} alt="Sample 3" className="w-fit h-fit object-cover" /></div>
+        <div className="lg:w-64 lg:h-95 h-70 lg:rounded-lg rounded-tr-xl rounded-br-xl overflow-hidden"><img src={sample_3} alt="Sample 3" className="w-fit h-fit object-cover" /></div>
       </div>
       </div>
         <div className="mt-10">
