@@ -14,13 +14,34 @@ const Products = () => {
         <h2 className="font-bold text-blue-800 mt-10 text-5xl">Create a unique look for your event with fully customizable water bottles.</h2>
         <p className="font-bold text-blue-900 mt-10">Designed with your logo, colors, and packaging preferences. Perfect for businesses, events, and promotions.</p>
       </div>
-      <div className="lg:grid lg:grid-cols-2 sm:grid-cols-1 flex mt-5">
-        <div className=" lg:grid">
-        <div className="lg:w-57 w-43.5 lg:rounded-lg rounded-tl-xl overflow-hidden"><img src={sample_1} alt="Sample 1" className="w-fit h-fit object-cover" /></div>
-        <div className="lg:w-57 w-43.5 lg:mt-4 lg:rounded-lg rounded-bl-xl overflow-hidden"><img src={sample_2} alt="Sample 2" className="w-fit h-fit object-cover" /></div>
-        </div>
-        <div className="lg:w-64 lg:h-95 lg:rounded-lg rounded-tr-xl rounded-br-xl overflow-hidden"><img src={sample_3} alt="Sample 3" className="w-fit h-fit object-cover" /></div>
-      </div>
+     <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:gap-4 mt-5 max-w-xl mx-auto lg:max-w-2xl h-56 sm:h-64 lg:h-72 ">
+  {/* Left column: two stacked images */}
+  <div className="grid grid-rows-2 gap-2 sm:gap-3 lg:gap-4 lg:h-80 h-64">
+    <div className="rounded-tl-xl lg:rounded-lg overflow-hidden">
+      <img
+        src={sample_1}
+        alt="Sample 1"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <div className="rounded-bl-xl lg:rounded-lg overflow-hidden">
+      <img
+        src={sample_2}
+        alt="Sample 2"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  {/* Right column: one tall image matching left column height */}
+  <div className="rounded-tr-xl rounded-br-xl lg:rounded-lg overflow-hidden h-full">
+    <img
+      src={sample_3}
+      alt="Sample 3"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
       </div>
         <div className="mt-10">
           <img
